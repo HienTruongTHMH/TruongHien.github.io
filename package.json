@@ -1,5 +1,6 @@
 {
   "name": "truonghien.github.io",
+  "type": "module",
   "version": "1.0.0",
   "description": "CV_Truong-Hoang-Minh-Hien",
   "main": "index.js",
