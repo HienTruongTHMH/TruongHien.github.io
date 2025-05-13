@@ -29,24 +29,27 @@
 </head>
 
 <body>
-  <div class="flex flex-row justify-center items-center p-12">
-    <h1 class="text-5xl text-green-300 animate-bounce">Hello, Tailwind CSS</h1>
-  </div>
+  <section class="min-h-screen w-full flex flex-col justify-center items-center bg-[url('/img/bluegradient.png')] bg-cover bg-top">
+    <!--  Tailwind mạnh về responsive
+        lg: Điều kiện khi một responsive nào đó có ngưỡng lớn hơn hoặc bằng 1024px 
+        lg:w-[80%] Khi đạt điều kiện trên thì width sẽ == 80%.  
+    -->
+    <div class="w-full lg:w-[80%] p-12 text-grey-800 w3-display-middle">
+      <!-- mb: margin bot -->
+      <h1 class="text-6xl font-bold mb-10 grid grid-col-1 lg:gap-5 ">
+        <span>Hi, my name is 
+          <span class="text-[#F4FAFA]">Truong Hoang Minh Hien</span>
+        </span>
+        <span class="text-black">I am a Web Developer</span>
+      </h1>
 
-  <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-    <div class="w3-display-topleft w3-padding-large w3-xlarge">
-      CV_Trương-Hoàng-Minh-Hiển
-    </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-jumbo w3-animate-top">Chuẩn bị sửa, thêm vào các thông tin cv</h1>
-      <p class="w3-large w3-center">10 days left</p>
-      <p>Các thông tin cá nhân</p>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-    </div>
-  </div>
-  
-  
+      <a href="#about-me" class="uppercase border-2 border-blue-400">
+          <span class="text-white p-4-4">Know more</span>
+        </a>
 
+    </div>
+  </section>
+  
   <script type="module" src="/src/scripts/application.js"></script>
 </body>
 </html>
